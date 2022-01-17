@@ -1,3 +1,6 @@
+import string
+
+
 class Robot():
     __name = "<unnamed>"
     __power = False
@@ -7,9 +10,9 @@ class Robot():
     
         
 
-    def__init__(self):
+    def __init__(self, name):
         self.__name = name
-        print('initialisation', format(self.name))
+        print('initialisation', format(self.__name))
 
 
     def eteint(self):
@@ -45,3 +48,5 @@ class Robot():
     def running (self):
         self.power=1
         pass
+
+monrobot=Robot("bob")
