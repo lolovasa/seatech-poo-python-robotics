@@ -35,9 +35,17 @@ class Robot():
 
     
 
-    def battery_level(self):
+ 
+
+
+    def charge(self):
+        for i in range(100):
+        __battery_level=__battery_level +1
+
+   def battery_level(self):
         return self.__battery_level
 
+        
     def shutdown (self):
         self.power=0
 
