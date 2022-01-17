@@ -1,4 +1,5 @@
 import string
+from turtle import speed
 
 
 class Robot():
@@ -32,21 +33,21 @@ class Robot():
 
 
 
-    def vide (self):
-        self.__battery_level=0
-    def charge(self,charge):
-        if type(charge)== int:
-            self.__battery_level=charge
-    def charge(self):
+    
+
+    def battery_level(self):
         return self.__battery_level
 
     def shutdown (self):
         self.power=0
 
-        pass
+        
 
     def running (self):
         self.power=1
-        pass
+        
 
 monrobot=Robot("bob")
+monrobot.move(40) #test de lecture de vitesse 
+print(monrobot.speed())
+print(monrobot.battery_level())
